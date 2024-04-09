@@ -72,7 +72,7 @@ class Project(dict):
         self["user-agent"] = USER_AGENT.FIREFOX
         self["source"] = {
             "type": SOURCE.CRAWL,
-            "url": "https://federative-pulls.000webhostapp.com",
+            "url": "http://federative-pulls.000webhostapp.com",
             "simply-static": {
                 "folder": CONFIGS["SIMPLYSTATIC"]["FOLDER"],
                 "archive": "",
@@ -335,7 +335,7 @@ class Project(dict):
 
     @property
     def src_url(self) -> str:
-        return "https://federative-pulls.000webhostapp.com" #self["source"]["url"]
+        return "http://federative-pulls.000webhostapp.com" #self["source"]["url"]
 
     @src_url.setter
     def src_url(self, src_url_: str) -> None:
