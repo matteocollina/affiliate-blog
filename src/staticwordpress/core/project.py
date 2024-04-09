@@ -160,6 +160,8 @@ class Project(dict):
         self["status"] = PROJECT.NEW
 
     def update_ss(self) -> None:
+        print(f"src_url: {self.src_url}")
+        print(f"API: {CONFIGS['SIMPLYSTATIC']['API']}")
         response = requests.get(
             self.src_url + CONFIGS["SIMPLYSTATIC"]["API"],
             headers={"Authorization": "Basic " + self.wp_auth_token},
