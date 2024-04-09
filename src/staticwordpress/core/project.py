@@ -72,7 +72,7 @@ class Project(dict):
         self["user-agent"] = USER_AGENT.FIREFOX
         self["source"] = {
             "type": SOURCE.CRAWL,
-            "url": "",
+            "url": "https://federative-pulls.000webhostapp.com",
             "simply-static": {
                 "folder": CONFIGS["SIMPLYSTATIC"]["FOLDER"],
                 "archive": "",
