@@ -335,7 +335,7 @@ class Project(dict):
 
     @property
     def src_url(self) -> str:
-        return self["source"]["url"]
+        return "https://federative-pulls.000webhostapp.com" #self["source"]["url"]
 
     @src_url.setter
     def src_url(self, src_url_: str) -> None:
